@@ -1,0 +1,5 @@
+services:
+  recyclebin.route_subscriber:
+    class: Drupal\recyclebin\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber, priority: -100 }
